@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Canciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script> <!-- CDN de COCO-SSD -->
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca de Canciones</h1>
+        <button id="recognize-btn">Reconocer Canción</button>
+        <div id="result" class="result"></div>
+        <div id="library">
+            <h2>Biblioteca de Canciones</h2>
+            <input type="text" id="song-title" placeholder="Título de la canción">
+            <input type="number" id="bpm" placeholder="BPM">
+            <select id="genre">
+                <option value="">Seleccionar Género</option>
+                <option value="Electro">Electro</option>
+                <option value="EDM">EDM</option>
+                <option value="Trance">Trance</option>
+                <option value="Instrumental">Instrumental</option>
+                <option value="Épica">Épica</option>
+                <option value="Motivadora">Motivadora</option>
+            </select>
+            <button id="add-song-btn">Agregar Canción</button>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+    <script src="miApp.js"></script>
+</body>
+</html>
